@@ -5,7 +5,7 @@ const generate = require("shortid").generate;
 const app = express();
 app.use(express.json());
 
-const PORT = 5555;
+const PORT = process.env.PORT || 5555;
 
 let users = [
   {
